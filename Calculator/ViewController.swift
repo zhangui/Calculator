@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var previousActions: UILabel!
     @IBOutlet weak var display: UILabel!
     
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         }
     }
     
-
+    
     
     @IBAction func performOperation(_ sender: UIButton) {
         if userIsTyping {
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
             }
         }
     }
-
-
+    
+    
 }
 

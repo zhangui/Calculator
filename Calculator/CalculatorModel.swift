@@ -84,7 +84,7 @@ struct CalculatorModel {
                 }
             case .binary(let function):
                 resultIsPending = true
-
+                
                 if accumulator != nil {
                     if previousIs(symbol: description) {
                         description += removeTrailing(float: String(accumulator!)) + symbol
@@ -107,12 +107,12 @@ struct CalculatorModel {
                 if accumulator != nil {
                     
                     let checker = removeTrailing(float: String(accumulator!))
-
+                    
                     if checker.range(of: ".") == nil {
                         floatPending = true
                     }
                 }
-
+                
             case .equals:
                 resultIsPending = false
                 performPendingBinaryOperation()
